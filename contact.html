@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .background {
+            width: 100%;
+            height: 600px;
+            background-color: rgb(255, 255, 255);
+            background-image: url('clouds.jpg');
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+            display: flex;
+            flex-direction: column; /* Center items vertically */
+            align-items: center; /* Center items horizontally */
+            justify-content: center;
+        }
+
+        .topnav {
+            background-color: rgb(240, 240, 240);
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            font-size: 20px;
+            font-family: tahoma, sans-serif;
+            color: rgb(71, 192, 222);
+            text-align: center;
+            padding: 20px 36px;
+            text-decoration: none;
+        }
+
+        .black-and-white {
+            filter: grayscale(100%);
+        }
+
+        .topnav a:hover {
+            background-color: rgb(220, 220, 220);
+            color: rgb(71, 192, 222);
+        }
+
+        /* Style the links within the <b> tags */
+        b a {
+            color: gray; /* Change the link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: normal; /* Remove bold */
+        }
+    </style>
+    <h1> 
+        <div id="myElement" style="color: gray; font-family: tahoma, sans-serif">Contact</div>
+    </h1>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="background">
+        <div style="margin-bottom: 10px; margin-top: 20px;">
+            <img src="email.png" alt="email" width="80px" height="60px" class="black-and-white">
+        </div>
+        <b style="color: gray; font-family: tahoma, sans-serif; font-size: 40px;">
+            Email: <a href="mailto:ishansuhail28@gmail.com" style= "color:rgb(71, 192, 222) "><u>ishansuhail28@gmail.com</u></a>
+        </b>
+        <br>
+        <br>
+        <div style="margin-top: 20px;">
+            <img src="link.png" alt="LinkedIn" width="100px" height="60px" class="black-and-white">
+        </div>
+        <b style="color: gray; font-family: tahoma, sans-serif; font-size: 40px; margin: 5px;">
+            LinkedIn: <a href="https://www.linkedin.com/in/ishan-suhail-9562b5196/" style= "color:rgb(71, 192, 222) " target="_blank"><u>Click for for LinkedIn Page.</u></a>
+        </b>
+    </div>
+</body>
+</html>

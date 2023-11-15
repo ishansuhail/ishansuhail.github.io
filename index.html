@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 100%; /* Add this to make the container fill the overlay */
+        }
+        .myElement {
+            font-family: "Courier New", monospace;
+        }
+        .overlay {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgb(240, 240, 240);
+            z-index: 0;
+            cursor: pointer;
+            display: flex; /* Add this to make child elements display as flex items */
+            flex-direction: column; /* Place child elements in a column */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+        .background{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            background-image: url('clouds.jpg');
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .topnav {
+            background-color: rgb(240, 240, 240);
+            overflow: hidden;
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            font-size: 20px;
+            font-family: tahoma, sans-serif;
+            color: rgb(71, 192, 222);
+            text-align: center;
+            padding: 20px 36px;
+            text-decoration: none;
+        }
+        
+        .topnav a:hover {
+            background-color: rgb(220, 220, 220);
+            color: rgb(71, 192, 222);
+        }
+        img {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+        }
+        .intro {
+            margin-top: 10%;
+            margin-left: -30%; 
+            font-family: tahoma, sans-serif;
+            color: rgb(71, 192, 222);
+            font-size: 52px;
+        }
+        .description {
+            margin-top: 20px; 
+            font-family: tahoma, sans-serif;
+            color: gray;
+        }
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            right: 20%; /* Adjust the right property to cover the last 80% of the container */
+            z-index: 1;
+            opacity: 0.2; /* Adjust the opacity value (0.0 to 1.0) as needed */
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1> 
+        <div id="myElement" style="color: gray; font-family: tahoma, sans-serif">Home</div>
+    </h1>
+
+    <div class = "background">
+        <div class="container">
+            <img src="cover_photo.jpeg" alt="cover_photo" width="400" height="400">
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="intro">
+                <b>Hello, I'm Ishan Suhail</b> 
+                <p class="description" style="font-size: 20px;">
+                    As a dedicated college student pursuing a career in Software Engineer,<br> 
+                    I am actively seeking opportunities for an internship. This site <br>
+                    serves as a window into my programming endeavors and showcases <br>
+                    my commitment to the field. Explore my projects, skills, and <br>
+                    aspirations as I, Ishan Suhail, strive to contribute meaningfully <br>
+                    to the world of technology and innovation. <br>
+                </p>
+            </div>
+        </div>
+    
+        <!-- Image Overlay -->
+        
+    
+        <div class="overlay">
+            <strong style="font-size: 24px; margin-top: 20px; margin-left: 20%; color: rgb(71, 192, 222); font-family: tahoma, sans-serif">General Information</strong>
+            <p style="font-size: 16px; margin-top: 20px; margin-left: 15%; font-family: tahoma, sans-serif">
+                <span style="color: gray;">Location: </span><span style="color: rgb(71, 192, 222);">Greater Boston</span>
+            </p>
+            <p style="font-size: 16px; margin-top: 5px; margin-left: 15%; font-family: tahoma, sans-serif">
+                <span style="color: gray;">School: </span><span style="color: rgb(71, 192, 222);">Rensselaer Polytechnic Institute</span>
+            </p>
+            <p style="font-size: 16px; margin-top: 5px; margin-left: 15%; font-family: tahoma, sans-serif">
+                <span style="color: gray;">Major: </span><span style="color: rgb(71, 192, 222);">Computer Science with Minor in Economics</span>
+            </p>
+            <p style="font-size: 16px; margin-top: 5px; margin-left: 15%; font-family: tahoma, sans-serif">
+                <span style="color: gray;">Phone #: </span><span style="color: rgb(71, 192, 222);">+1 (781)-460-4139</span>
+            </p>
+            <p style="font-size: 16px; margin-top: 5px; margin-left: 15%; font-family: tahoma, sans-serif">
+                <span style="color: gray;">Email: </span><span style="color: rgb(71, 192, 222);">ishansuhail28@gmail.com</span>
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>
